@@ -15,3 +15,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* styles.css */
+:root {
+  --primary: #fbc807;
+}
+
+/* selected partner slider code */
+
+
+.select-partner-swiper .swiper-pagination-bullet {
+  background: white !important;
+  width: 100px !important;
+  display: inline-block;
+  height: 6px !important;
+  border-radius: 5px !important;
+}
+.select-partner-swiper .swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(8, 8, 8, 0.795) !important;
+  z-index: 12 !important;
+  color: var(--primary);
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  padding: 10px !important;
+}
+
+.select-partner-swiper .swiper-button-prev {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  padding: 10px !important;
+  color: var(--primary);
+}
