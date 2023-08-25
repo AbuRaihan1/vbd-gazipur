@@ -1,0 +1,11 @@
+:root {
+  --primary: #fbc807;
+  --secondary: #134d22;
+}
+
+.projects {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+  background: var(--primary);
+}
