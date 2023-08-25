@@ -10,8 +10,8 @@ const Project = ({ project }) => {
   const { img, title, description } = project;
   return (
     <SwiperSlide>
-      <div>
-        <div className="border border-card shadow-2xl rounded-xl mb-4">
+      <div className="w-1/2 mx-auto">
+        <div className=" shadow-2xl rounded-xl mb-4  mx-auto border-4">
           <img src={img} alt="project_img" className="w-full rounded-t-2xl" />
           <div className="py-2 px-2">
             <h2>{title}</h2>

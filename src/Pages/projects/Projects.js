@@ -1,12 +1,13 @@
 import React from "react";
-import Project from "./Project";
-import { Navigation, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import slider1 from "../../../src/assets/images/group.jpg";
 import slider2 from "../../../src/assets/images/team-with-banner.jpg";
 import slider3 from "../../../src/assets/images/team-with-teacher.jpg";
+import Project from "./Project";
 // import Container from "@/components/Container";
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
@@ -35,19 +36,32 @@ const Projects = () => {
     <div>
       <div>
         <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
+          //   slidesPerView={1}
+          //   spaceBetween={30}
           loop={true}
-          pagination={{
-            clickable: true,
+          //   pagination={{
+          //     clickable: true,
+          //   }}
+          //   navigation={true}
+          //   modules={[Pagination, Navigation]}
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
           }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper my-5 border"
         >
           {projects.map((project) => (
-            <SwiperSlide key={project.id}>
-              <Project project={project}></Project>
+            <SwiperSlide key={project.id} className="border w-[500px]">
+              <Project project={project} />
             </SwiperSlide>
           ))}
         </Swiper>
