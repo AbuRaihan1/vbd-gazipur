@@ -47,7 +47,6 @@ const Projects = () => {
   return (
     <Swiper
       // slidesPerView={1}
-      defaultChecked={3}
       spaceBetween={30}
       loop={true}
       pagination={{
@@ -56,7 +55,6 @@ const Projects = () => {
       navigation={true}
       effect={"coverflow"}
       grabCursor={true}
-      centeredSlides={true}
       slidesPerView={"auto"}
       coverflowEffect={{
         rotate: 50,
