@@ -9,13 +9,18 @@ import "swiper/css/pagination";
 const Project = ({ project }) => {
   const { img, title, description } = project;
   return (
-    <SwiperSlide>
-      <div className="w-1/2 mx-auto">
-        <div className=" shadow-2xl rounded-xl mb-4  mx-auto border-4">
-          <img src={img} alt="project_img" className="w-full rounded-t-2xl" />
-          <div className="py-2 px-2">
-            <h2>{title}</h2>
-            <p>{description}</p>
+    <SwiperSlide className="">
+      <div className="mx-auto h-full">
+        <div className="h-full  rounded-xl mb-4  mx-auto">
+          <img
+            src={img}
+            alt="project_img"
+            className="w-full h-[250] rounded-t-2xl"
+          />
+          <div className="py-3 px-4">
+            <h2 className="font-bold text-2xl ">{title}</h2>
+            <p className="mt-3 text-lg text-justify">{description}</p>
+            <button className="secondary-button mt-4">See details</button>
           </div>
         </div>
       </div>
