@@ -47,37 +47,41 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="projects my-20">
-      <Swiper
-        spaceBetween={30}
-        slidesOffsetBefore={400}
-        pagination={{
-          clickable: true,
-        }}
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        loop={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper projects my-10"
-      >
-        {projects.map((project) => (
-          <SwiperSlide
-            key={project.id}
-            className="mt-5 mb-28 shadow-2xl  bg-white"
-          >
-            <Project project={project} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className="pt-40 pb-5 mb-5 relative">
+      <div class="custom-div"></div>
+      <h2 className="absolute lg:text-5xl top-16 font-bold text-2xl  left-[45%]">
+        Projects
+      </h2>
+      <div className="projects">
+        <Swiper
+          effect={"coverflow"}
+          spaceBetween={0}
+          loop={true}
+          slidesOffsetBefore={400}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper projects my-10"
+        >
+          {projects.map((project) => (
+            <SwiperSlide
+              key={project.id}
+              className="mt-12 mb-44 shadow-2xl  bg-white"
+            >
+              <Project project={project} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

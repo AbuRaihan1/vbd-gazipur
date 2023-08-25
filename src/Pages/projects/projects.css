@@ -4,8 +4,17 @@
 }
 
 .projects {
-  position: relative;
-  overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
   background: var(--primary);
+}
+
+.custom-div {
+  width: 300px;
+  height: 200px;
+  background-color: var(--primary);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  position: absolute;
+  /* z-index: 10; */
+  top: 5px;
+  left: 0;
 }
