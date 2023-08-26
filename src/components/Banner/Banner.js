@@ -47,7 +47,7 @@ export default function Banner() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
-            <div className="text-area absolute top-24 left-20 z-10">
+            <div data-aos="fade-in" className="text-area absolute top-24 left-20 z-10">
               <h2 className="text-3xl text-white font-semibold">
                 VBD Gazipur District
               </h2>
