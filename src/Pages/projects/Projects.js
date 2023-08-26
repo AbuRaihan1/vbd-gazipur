@@ -57,7 +57,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="pt-40 pb-5 mb-5 relative">
+    <div className="pt-40  relative">
       <div class="custom-div"></div>
       <h2 className="absolute lg:text-5xl text-secondary top-16 font-bold text-2xl  left-[45%]">
         Projects
@@ -80,7 +80,7 @@ const Projects = () => {
           }}
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
-          className="mySwiper projects my-10"
+          className="mySwiper projects"
           data-aos="zoom-in"
         >
           {projects.map((project) => (
