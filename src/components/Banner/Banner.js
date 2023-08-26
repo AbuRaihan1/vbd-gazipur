@@ -37,6 +37,7 @@ export default function Banner() {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
+        grabCursor={true}
         loop={true}
         pagination={{
           clickable: true,
