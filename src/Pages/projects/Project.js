@@ -15,7 +15,7 @@ const Project = ({ project }) => {
   }, []);
   const { img, title, description } = project;
   return (
-    <SwiperSlide className="" >
+    <SwiperSlide className="">
       <div className="mx-auto h-full">
         <div className="h-full  rounded-xl mb-4  mx-auto">
           <img

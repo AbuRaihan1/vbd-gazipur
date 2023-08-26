@@ -10,11 +10,11 @@
 }
 
 .primary-button {
-  @apply bg-primary px-5 py-2 rounded-lg text-black font-[600] text-[18px] hover:bg-[#F6A704] transition-all duration-300;
+  @apply bg-primary px-8 py-2 rounded-full text-black font-[600] text-[18px] hover:bg-[#F6A704] transition-all duration-300;
 }
 
 .secondary-button {
-  @apply bg-secondary px-5 py-2 rounded-lg text-white font-[600] text-[18px];
+  @apply bg-secondary px-8 py-2 rounded-full text-white font-[600] text-[18px] hover:bg-[#13702c] transition-all duration-300;
 }
 
 /* selected partner slider code */

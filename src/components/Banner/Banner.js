@@ -7,8 +7,29 @@ import slider3 from "../../../src/assets/images/team-with-teacher.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import BannerSlider from "./BannerSlider";
 
 export default function Banner() {
+  const bannerSlides = [
+    {
+      img: slider2,
+      title: "LET'S REBUILD OUR NATION'S!",
+      description: "project description amar shonar bangla ami tumay valobashi",
+      id: 2,
+    },
+    {
+      img: slider1,
+      title: "VOLUNTEER FOR BANGLADESH",
+      description: "project description amar shonar bangla ami tumay valobashi",
+      id: 1,
+    },
+    {
+      img: slider3,
+      title: "WE ARE COMMITED TO OUR WORK",
+      description: "project description amar shonar bangla ami tumay valobashi",
+      id: 3,
+    },
+  ];
   return (
     <>
       {/* this files css code in global.css file, from 353 lines start */}
@@ -22,72 +43,17 @@ export default function Banner() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper select-partner-swiper lg:h-screen h-auto w-full"
+        className="select-partner-swiper lg:h-screen h-[500px] w-full"
       >
         <div className="border">
-          <SwiperSlide className="relative">
-            <div className="text-area absolute top-24 left-20 z-10">
-              <h2 className="text-3xl text-white font-semibold">
-                VBD Gazipur District
-              </h2>
-              <h1 className="text-6xl uppercase text-white mt-3 font-bold">
-                let's rebuild out nation!
-              </h1>
-              <p className="w-1/2 text-white font-semibold mt-6">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Numquam ex Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Numquam obcaecati temporibus perferendis.
-              </p>
-            </div>
-            <div>
-              <img src={slider1} alt="" className="w-full h-full" />
-            </div>
-            <div className="absolute top-0 left-0 w-full h-full">
-              <div className="h-full w-full bg-gradient-to-r from-black  black opacity-90  "></div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="relative">
-            <div data-aos="fade-in" className="text-area absolute top-24 left-20 z-10">
-              <h2 className="text-3xl text-white font-semibold">
-                VBD Gazipur District
-              </h2>
-              <h1 className="text-6xl uppercase text-white mt-3 font-bold w-3/4">
-                we are commited to our work
-              </h1>
-              <p className="w-1/2 text-white font-semibold mt-6">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Numquam ex Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Numquam obcaecati temporibus perferendis.
-              </p>
-            </div>
-            <div>
-              <img src={slider2} alt="" className="w-full h-full" />
-            </div>
-            <div className="absolute top-0 left-0 w-full h-full">
-              <div className="h-full w-full bg-gradient-to-r from-black  black opacity-90  "></div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="relative">
-            <div className="text-area absolute top-24 left-20 z-10">
-              <h2 className="text-3xl text-white font-semibold">
-                VBD Gazipur District
-              </h2>
-              <h1 className="text-6xl uppercase text-white mt-3 font-bold">
-                let's rebuild out nation!
-              </h1>
-              <p className="w-1/2 text-white font-semibold mt-6">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Numquam ex Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Numquam obcaecati temporibus perferendis.
-              </p>
-            </div>
-            <div>
-              <img src={slider3} alt="" className="w-full h-full" />
-            </div>
-            <div className="absolute top-0 left-0 w-full h-full">
-              <div className="h-full w-full bg-gradient-to-r from-black  black opacity-90  "></div>
-            </div>
-          </SwiperSlide>
+          {bannerSlides.map((bannerSingle) => (
+            <SwiperSlide
+              key={bannerSingle.id}
+              className=" mb-44 shadow-2xl  bg-white"
+            >
+              <BannerSlider bannerSingle={bannerSingle} />
+            </SwiperSlide>
+          ))}
         </div>
       </Swiper>
       {/* </Container> */}

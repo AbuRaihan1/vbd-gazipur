@@ -21,7 +21,7 @@ const Projects = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-      offset: 300,
+      // offset: 300,
     });
   }, []);
   const projects = [
@@ -57,9 +57,9 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="pt-40 pb-5 mb-5 relative border">
+    <div className="pt-40 pb-5 mb-5 relative">
       <div class="custom-div"></div>
-      <h2 className="absolute lg:text-5xl top-16 font-bold text-2xl  left-[45%]">
+      <h2 className="absolute lg:text-5xl text-secondary top-16 font-bold text-2xl  left-[45%]">
         Projects
       </h2>
       <div className="projects">
