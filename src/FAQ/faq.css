@@ -1,3 +1,13 @@
 .faq {
   clip-path: polygon(0 0, 100% 29%, 100% 100%, 0% 100%);
 }
+
+.custom-div-faq {
+  width: 300px;
+  height: 200px;
+  background-color: var(--secondary);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+}

@@ -109,7 +109,9 @@ const WorkingFor = () => {
 
   return (
     <div className=" my-20">
-      <h2 className="text-center text-secondary font-bold text-5xl mb-10">We are work for</h2>
+      <h2 className="text-center text-secondary font-bold lg:text-5xl text-3xl mb-16">
+        We are work for
+      </h2>
 
       <div className="grid lg:grid-cols-3 gap-6 container mx-auto">
         {sdgGoals.map((goal) => (
