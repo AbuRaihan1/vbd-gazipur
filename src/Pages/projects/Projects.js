@@ -21,7 +21,7 @@ const Projects = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-      // offset: 300,
+      offset: 100,
     });
   }, []);
   const projects = [

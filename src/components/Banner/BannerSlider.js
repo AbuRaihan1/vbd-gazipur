@@ -16,22 +16,17 @@ const BannerSlider = ({ bannerSingle }) => {
 
   return (
     <SwiperSlide className="relative">
-      <div className="text-area absolute lg:top-20 top-8 lg:left-16 left-12 z-10">
-        <h2
-          className="lg:text-3xl font-semibold text-white text-lg"
-          data-aos="fade-up"
-        >
+      <div
+        className="text-area absolute lg:top-20 top-8 lg:left-16 left-12 z-10"
+        data-aos="fade-up"
+      >
+        <h2 className="lg:text-3xl font-semibold text-white text-lg">
           VBD Gazipur
         </h2>
-        <h1
-          className="lg:text-6xl text-3xl uppercase  mt-3 font-bold text-primary w-3/4"
-          data-aos="fade-up"
-        >
+        <h1 className="lg:text-6xl text-3xl uppercase  mt-3 font-bold text-primary w-3/4">
           {title}
         </h1>
-        <p className="w-3/4 text-white font-semibold mt-6" data-aos="fade-up">
-          {description}
-        </p>
+        <p className="w-3/4 text-white font-semibold mt-6">{description}</p>
       </div>
       <div>
         <img src={img} alt="" className="md:w-full lg:h-full h-[500px]" />
