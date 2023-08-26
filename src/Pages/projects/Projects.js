@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import slider1 from "../../../src/assets/images/group.jpg";
@@ -7,6 +7,10 @@ import slider3 from "../../../src/assets/images/team-with-teacher.jpg";
 import slider4 from "../../../src/assets/images/slide4.jpg";
 import slider5 from "../../../src/assets/images/slide5.jpg";
 import Project from "./Project";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // import Container from "@/components/Container";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -14,6 +18,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./projects.css";
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      offset: 300,
+    });
+  }, []);
   const projects = [
     {
       img: slider1,
@@ -47,7 +57,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="pt-40 pb-5 mb-5 relative">
+    <div className="pt-40 pb-5 mb-5 relative border">
       <div class="custom-div"></div>
       <h2 className="absolute lg:text-5xl top-16 font-bold text-2xl  left-[45%]">
         Projects
@@ -71,6 +81,7 @@ const Projects = () => {
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper projects my-10"
+          data-aos="zoom-in"
         >
           {projects.map((project) => (
             <SwiperSlide
