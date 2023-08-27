@@ -3,6 +3,7 @@ import PageBanner from "../../components/PageBanner/PageBanner";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import memberImg from "../../../src/assets/images/member.jpg";
+import BoardMember from "./BoardMember";
 const Team = () => {
   const title = "Our Team";
   const description =
@@ -121,7 +122,11 @@ const Team = () => {
             </div>
 
             <TabPanel>
-              <h2>Board member</h2>
+              <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                {boardMember.map((member, idx) => (
+                  <BoardMember member={member} key={idx} />
+                ))}
+              </div>
             </TabPanel>
             <TabPanel>
               <h2>Committee member</h2>
