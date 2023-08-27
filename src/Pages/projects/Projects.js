@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import slider1 from "../../../src/assets/images/group.jpg";
@@ -17,6 +17,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./projects.css";
+import ProjectDetails from "./ProjectDetails";
 const Projects = () => {
   useEffect(() => {
     AOS.init({
@@ -24,38 +25,14 @@ const Projects = () => {
       offset: 100,
     });
   }, []);
-  const projects = [
-    {
-      img: slider1,
-      title: "project title",
-      description: "project description amar shonar bangla ami tumay valobashi",
-      id: 1,
-    },
-    {
-      img: slider2,
-      title: "project title",
-      description: "project description amar shonar bangla ami tumay valobashi",
-      id: 2,
-    },
-    {
-      img: slider3,
-      title: "project title",
-      description: "project description amar shonar bangla ami tumay valobashi",
-      id: 3,
-    },
-    {
-      img: slider4,
-      title: "project title",
-      description: "project description amar shonar bangla ami tumay valobashi",
-      id: 4,
-    },
-    {
-      img: slider5,
-      title: "project title",
-      description: "project description amar shonar bangla ami tumay valobashi",
-      id: 5,
-    },
-  ];
+
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    fetch("/featuresProjectsData.json").then((res) =>
+      res.json().then((data) => setProjects(data))
+    );
+  }, []);
+
   return (
     <div className="pt-40  relative">
       <div class="custom-div"></div>
@@ -89,6 +66,9 @@ const Projects = () => {
               className="mt-12 mb-44 shadow-2xl  bg-white"
             >
               <Project project={project} />
+              <div className="hidden">
+                <ProjectDetails projectsArray={projects} />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
