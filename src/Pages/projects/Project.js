@@ -7,13 +7,14 @@ import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 const Project = ({ project }) => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
     });
   }, []);
-  const { img, title, description } = project;
+  const { img, title, description, id } = project;
   return (
     <SwiperSlide className="">
       <div className="mx-auto h-full">
@@ -26,7 +27,9 @@ const Project = ({ project }) => {
           <div className="py-3 px-4">
             <h2 className="font-bold text-2xl ">{title}</h2>
             <p className="mt-3 text-lg text-justify">{description}</p>
-            <button className="secondary-button mt-4">See details</button>
+            <Link to={`/project-details/${id}`}>
+              <button className="secondary-button mt-4">See details</button>
+            </Link>
           </div>
         </div>
       </div>

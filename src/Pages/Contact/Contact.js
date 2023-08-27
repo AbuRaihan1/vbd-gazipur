@@ -1,5 +1,4 @@
 import React from "react";
-import BannerSlider from "../../components/Banner/BannerSlider";
 import PageBanner from "../../components/PageBanner/PageBanner";
 
 const Contact = () => {
