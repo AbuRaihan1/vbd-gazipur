@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import SdgGoalCard from "./SdgGoalCard";
-
 const WorkingFor = () => {
   const sdgGoals = [
     {
@@ -107,16 +106,50 @@ const WorkingFor = () => {
     },
   ];
 
+  const [showAll, setShowAll] = useState(false);
+  const [peopleToShow, setPeopleToShow] = useState(6);
+
+  const toggleShowAll = () => {
+    setShowAll((prevShowAll) => !prevShowAll);
+  };
+
+  const handleLoadMore = () => {
+    setShowAll(true);
+  };
+
+  const handleSeeLess = () => {
+    setShowAll(false);
+    // setPeopleToShow(8);
+  };
+
   return (
     <div className=" my-20">
       <h2 className="text-center text-secondary font-bold lg:text-5xl text-3xl mb-16">
         We are work for
       </h2>
 
-      <div className="grid lg:grid-cols-3 gap-6 container mx-auto">
-        {sdgGoals.map((goal) => (
-          <SdgGoalCard goal={goal} key={goal.goalNumber} />
-        ))}
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 container mx-auto for_shadow_this">
+        {sdgGoals
+          .slice(0, showAll ? sdgGoals.length : peopleToShow)
+          .map((goal, idx) => (
+            <SdgGoalCard goal={goal} key={idx} />
+          ))}
+
+        {/*  */}
+      </div>
+
+      <div className="block text-center m-auto">
+        {!showAll && (
+          <button onClick={handleLoadMore} className="secondary-button mt-10">
+            Load more
+          </button>
+        )}
+
+        {showAll && (
+          <button onClick={handleSeeLess} className="secondary-button mt-10">
+            See less
+          </button>
+        )}
       </div>
     </div>
   );
