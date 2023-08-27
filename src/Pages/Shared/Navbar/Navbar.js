@@ -65,6 +65,18 @@ const Header = () => {
               Team
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/contact"
+              aria-label="Contact us"
+              title="Contact us"
+              className={({ isActive }) =>
+                isActive ? "navbar-active-link" : "navbar-link"
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
         </ul>
         <div className="lg:hidden z-50">
           <button
@@ -173,6 +185,18 @@ const Header = () => {
                         }
                       >
                         Team
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/contact"
+                        aria-label="Contact us"
+                        title="Contact us"
+                        className={({ isActive }) =>
+                          isActive ? "navbar-active-link" : "navbar-link"
+                        }
+                      >
+                        Contact
                       </NavLink>
                     </li>
                   </ul>
