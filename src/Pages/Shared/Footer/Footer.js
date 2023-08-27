@@ -6,7 +6,7 @@ import { AiFillYoutube, AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
   return (
     <div>
-      <footer className="-mt-1 footer p-10 bg-[#111] text-green-600 font-semibold">
+      <footer className="-mt-1 footer p-10 bg-[#161616] text-green-600 font-semibold">
         <div>
           <span className="text-primary uppercase text-xl">Services</span>
           <Link className="link link-hover" to="#">
@@ -84,7 +84,7 @@ const Footer = () => {
           </Link>
           <Link
             to="#"
-            target="_blank"
+            // target="_blank"
             className="bg-secondary rounded-full text-white hover:bg-green-700 duration-200 p-3"
           >
             <AiFillYoutube />
@@ -92,7 +92,7 @@ const Footer = () => {
 
           <Link
             to="#"
-            target="_blank"
+            // target="_blank"
             className="bg-secondary rounded-full text-white hover:bg-green-700 duration-200 p-3"
           >
             <AiFillInstagram />
@@ -100,7 +100,7 @@ const Footer = () => {
 
           <Link
             to="#"
-            target="_blank"
+            // target="_blank"
             className="bg-secondary rounded-full text-white hover:bg-green-700 duration-200 p-3"
           >
             <FaTwitter />
