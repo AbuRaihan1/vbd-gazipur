@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import slider1 from "../../../src/assets/images/group.jpg";
-import slider2 from "../../../src/assets/images/team-with-banner.jpg";
-import slider3 from "../../../src/assets/images/team-with-teacher.jpg";
-import slider4 from "../../../src/assets/images/slide4.jpg";
-import slider5 from "../../../src/assets/images/slide5.jpg";
 import Project from "./Project";
 
 import AOS from "aos";
@@ -17,7 +12,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./projects.css";
-import ProjectDetails from "./ProjectDetails";
 const Projects = () => {
   useEffect(() => {
     AOS.init({
@@ -66,9 +60,9 @@ const Projects = () => {
               className="mt-12 mb-44 shadow-2xl  bg-white"
             >
               <Project project={project} />
-              <div className="hidden">
+              {/* <div className="hidden">
                 <ProjectDetails projectsArray={projects} />
-              </div>
+              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>
