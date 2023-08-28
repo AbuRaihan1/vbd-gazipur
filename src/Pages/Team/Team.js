@@ -15,6 +15,8 @@ import mojahid from "../../../src/assets/images/mojahid.jpg";
 import abidSajib from "../../../src/assets/images/abidSajib.jpg";
 import sojibJoy from "../../../src/assets/images/sojibJoy.jpg";
 import sakibSojib from "../../../src/assets/images/sakibSojib.jpg";
+import raihan from "../../../src/assets/images/raihan.jpg";
+import nahid from "../../../src/assets/images/nahid.jpg";
 import siam from "../../../src/assets/images/siam.jpg";
 const Team = () => {
   const title = "Our Team";
@@ -69,21 +71,21 @@ const Team = () => {
 
   const committeeMember = [
     {
-      img: memberImg,
+      img: raihan,
       name: "Abu Raihan",
       title: "Content writter",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "male",
     },
     {
-      img: memberImg,
+      img: sojibJoy,
       name: "Sojib hasan joy",
       title: "Campus Ambassedor",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "male",
     },
     {
-      img: memberImg,
+      img: abidSajib,
       name: "Abid hasan Sajib",
       title: "Graphics Designer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
@@ -97,14 +99,14 @@ const Team = () => {
       gender: "female",
     },
     {
-      img: "", // Empty string for female
-      name: "Tasmisa Tithi",
+      img: nahid, // Empty string for female
+      name: "Nahid Hossain",
       title: "Human resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
-      gender: "female",
+      gender: "male",
     },
     {
-      img: memberImg,
+      img: mojahid,
       name: "Md Mojahidul Islam",
       title: "Human resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
@@ -115,46 +117,46 @@ const Team = () => {
 
   const generalMember = [
     {
-      img: memberImg,
-      name: "Abu Raihan",
+      img: sakibSojib,
+      name: "Sakib Hasan Sojib",
       title: "Content writter",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "male",
     },
     {
-      img: memberImg,
-      name: "Sojib hasan joy",
-      title: "Campus Ambassedor",
+      img: "", // Empty string for female
+      name: "Tasmia Tithi",
+      title: "Human resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
-      gender: "male",
+      gender: "female",
     },
     {
       img: memberImg,
-      name: "Abid hasan Sajib",
+      name: "Ashraful Alam Tanvir",
       title: "Graphics Designer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "male",
     },
     {
       img: "", // Empty string for female
-      name: "Sabina Saba",
+      name: "Afrin",
       title: "Human Resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "female",
     },
     {
       img: "", // Empty string for female
-      name: "Tasmisa Tithi",
-      title: "Human resource officer",
-      socialLink: ["facebook", "twitter", "instagram", "linkedin"],
-      gender: "female",
-    },
-    {
-      img: memberImg,
-      name: "Md Mojahidul Islam",
+      name: "Ikhlas Hossain",
       title: "Human resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "male",
+    },
+    {
+      img: "",
+      name: "Tahsina Akter",
+      title: "Human resource officer",
+      socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "female",
     },
   ];
   return (

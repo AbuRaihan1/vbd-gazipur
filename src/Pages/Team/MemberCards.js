@@ -1,7 +1,7 @@
 import React from "react";
 import "../../FAQ/faq.css";
 import femaleAvatar from "../../../src/assets/images/femaleAvatar.jpg";
-import maleAvatar from "../../../src/assets/images/maleAvatar.png";
+import maleAvatar from "../../../src/assets/images/member.jpg";
 const MemberCards = ({ member }) => {
   const { img, title, name, gender } = member;
   const avatarImg = gender === "female" ? femaleAvatar : maleAvatar;
