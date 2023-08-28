@@ -1,9 +1,9 @@
 import React from "react";
-import PageBanner from "../../components/PageBanner/PageBanner";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import memberImg from "../../../src/assets/images/member.jpg";
-import BoardMember from "./BoardMember";
+import PageBanner from "../../components/PageBanner/PageBanner";
+import MemberCards from "./MemberCards";
 const Team = () => {
   const title = "Our Team";
   const description =
@@ -11,35 +11,48 @@ const Team = () => {
 
   const boardMember = [
     {
-      img: memberImg,
+      img: "", // Empty string
       name: "Sohanur Rahman",
       title: "President",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
       img: memberImg,
       name: "Mohammad Akash",
       title: "General Secretery",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
       img: memberImg,
       name: "Arman Hasan",
       title: "Public relations officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
+    },
+    {
+      img: "", // Empty string for female
+      name: "Sonia Akter",
+      title: "Public relations officer",
+      socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "female",
     },
     {
       img: memberImg,
       name: "Bulbul Ahmed",
       title: "Tresurer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
       img: memberImg,
       name: "Siam Hossain",
       title: "Human resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
+    // ... other board members ...
   ];
 
   const committeeMember = [
@@ -48,31 +61,44 @@ const Team = () => {
       name: "Abu Raihan",
       title: "Content writter",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
       img: memberImg,
-      name: "Nahid Hossain",
+      name: "Sojib hasan joy",
       title: "Campus Ambassedor",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
       img: memberImg,
-      name: "Ikhlas Hossain",
+      name: "Abid hasan Sajib",
       title: "Graphics Designer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
-      img: memberImg,
-      name: "Tanzila trisha",
+      img: "", // Empty string for female
+      name: "Sabina Saba",
       title: "Human Resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "female",
     },
     {
-      img: memberImg,
+      img: "", // Empty string for female
       name: "Tasmisa Tithi",
       title: "Human resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "female",
     },
+    {
+      img: memberImg,
+      name: "Md Mojahidul Islam",
+      title: "Human resource officer",
+      socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
+    },
+    // ... other committee members ...
   ];
 
   const generalMember = [
@@ -124,15 +150,23 @@ const Team = () => {
             <TabPanel>
               <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                 {boardMember.map((member, idx) => (
-                  <BoardMember member={member} key={idx} />
+                  <MemberCards member={member} key={idx} />
                 ))}
               </div>
             </TabPanel>
             <TabPanel>
-              <h2>Committee member</h2>
+              <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                {committeeMember.map((member, idx) => (
+                  <MemberCards member={member} key={idx} />
+                ))}
+              </div>
             </TabPanel>
             <TabPanel>
-              <h2>general member</h2>
+              <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                {generalMember.map((member, idx) => (
+                  <MemberCards member={member} key={idx} />
+                ))}
+              </div>
             </TabPanel>
           </Tabs>
         </div>
