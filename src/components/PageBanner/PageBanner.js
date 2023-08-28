@@ -2,9 +2,9 @@ import React from "react";
 import img from "../../../src/assets/images/group.jpg";
 const PageBanner = ({ title, description }) => {
   return (
-    <div className="lg:h-[450px] h-[350px] relative">
+    <div className="lg:h-[500px] h-[350px] relative">
       <div className="relative">
-        <img src={img} alt="" className="w-full lg:h-[450px] h-[350px]" />
+        <img src={img} alt="" className="w-full lg:h-[500px] h-[350px]" />
         <div className="lg:top-20 lg:left-20 left-10 top-10 absolute z-10">
           <h2 className="  lg:text-5xl text-3xl font-bold z-10 text-primary">
             {title}

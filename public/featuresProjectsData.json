@@ -1,33 +1,32 @@
 [
-    {
-      "img": "slider1",
-      "title": "project title1",
-      "description": "project description amar shonar bangla ami tumay valobashi",
-      "id": 1
-    },
-    {
-      "img": "slider2",
-      "title": "project title2",
-      "description": "project description amar shonar bangla ami tumay valobashi",
-      "id": 2
-    },
-    {
-      "img": "slider3",
-      "title": "project title3",
-      "description": "project description amar shonar bangla ami tumay valobashi",
-      "id": 3
-    },
-    {
-      "img": "slider4",
-      "title": "project title4",
-      "description": "project description amar shonar bangla ami tumay valobashi",
-      "id": 4
-    },
-    {
-      "img": "slider5",
-      "title": "project title5",
-      "description": "project description amar shonar bangla ami tumay valobashi",
-      "id": 5
-    }
-  ]
-  
+  {
+    "img": "https://i.ibb.co/ZmDgpQq/13744786-Mar-Business-11.jpg",
+    "title": "project title1",
+    "description": "project description amar shonar bangla ami tumay valobashi",
+    "id": 1
+  },
+  {
+    "img": "https://i.ibb.co/PWR5MG0/group.jpg",
+    "title": "project title2",
+    "description": "project description amar shonar bangla ami tumay valobashi",
+    "id": 2
+  },
+  {
+    "img": "https://i.ibb.co/hLtv7Vg/slide5.jpg",
+    "title": "project title3",
+    "description": "project description amar shonar bangla ami tumay valobashi",
+    "id": 3
+  },
+  {
+    "img": "https://i.ibb.co/fdr5Pf7/team-with-banner.jpg",
+    "title": "project title4",
+    "description": "project description amar shonar bangla ami tumay valobashi",
+    "id": 4
+  },
+  {
+    "img": "https://i.ibb.co/fdr5Pf7/team-with-banner.jpg",
+    "title": "project title5",
+    "description": "project description amar shonar bangla ami tumay valobashi",
+    "id": 5
+  }
+]
