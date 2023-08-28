@@ -15,6 +15,10 @@ const Project = ({ project, projectsArray }) => {
     });
   }, []);
   const { img, title, description, id } = project;
+  const descriptionSliceText =
+    description.length > 100
+      ? description.substring(0, 100) + "..."
+      : description;
   return (
     <SwiperSlide className="">
       <div className="mx-auto h-full">
@@ -26,7 +30,7 @@ const Project = ({ project, projectsArray }) => {
           />
           <div className="py-3 px-4">
             <h2 className="font-bold text-2xl ">{title}</h2>
-            <p className="mt-3 text-lg text-justify">{description}</p>
+            <p className="mt-3 text-lg text-justify">{descriptionSliceText}</p>
             <Link to={`/project-details/${id}`}>
               <button className="secondary-button mt-4">See details</button>
             </Link>

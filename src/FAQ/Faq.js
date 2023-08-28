@@ -29,7 +29,7 @@ export default function Faq() {
 
   return (
     <div className="pb-10 bg-white relative">
-      <div class="custom-div-faq"></div>
+      <div className="custom-div-faq"></div>
       <div className="faq w-full bg-secondary pb-32 pt-48 relative mb-14 ">
         <h2 className="text-center mb-10 text-primary font-bold lg:text-5xl text-2xl">
           FAQ

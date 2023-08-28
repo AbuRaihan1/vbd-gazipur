@@ -15,7 +15,10 @@ const ProjectDetails = () => {
   const { title, description, img } = item;
   console.log(img);
   return (
-    <div className="container mx-auto shadow-2xl rounded-xl p-5 my-20">
+    <div
+      className="container mx-auto shadow-2xl rounded-xl p-5 my-20"
+      data-aos="fade-up"
+    >
       <div className="grid lg:grid-cols-2 gap-6">
         <div>
           {" "}
