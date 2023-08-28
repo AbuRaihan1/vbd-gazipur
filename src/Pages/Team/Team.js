@@ -4,6 +4,18 @@ import "react-tabs/style/react-tabs.css";
 import memberImg from "../../../src/assets/images/member.jpg";
 import PageBanner from "../../components/PageBanner/PageBanner";
 import MemberCards from "./MemberCards";
+
+// import member images
+
+import sohan from "../../../src/assets/images/sohan.jpg";
+import akash from "../../../src/assets/images/akash.jpg";
+import arman from "../../../src/assets/images/arman.jpg";
+import bulbul from "../../../src/assets/images/bulbul.jpg";
+import mojahid from "../../../src/assets/images/mojahid.jpg";
+import abidSajib from "../../../src/assets/images/abidSajib.jpg";
+import sojibJoy from "../../../src/assets/images/sojibJoy.jpg";
+import sakibSojib from "../../../src/assets/images/sakibSojib.jpg";
+import siam from "../../../src/assets/images/siam.jpg";
 const Team = () => {
   const title = "Our Team";
   const description =
@@ -11,21 +23,21 @@ const Team = () => {
 
   const boardMember = [
     {
-      img: "", // Empty string
+      img: sohan, // Empty string
       name: "Sohanur Rahman",
       title: "President",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "male",
     },
     {
-      img: memberImg,
+      img: akash,
       name: "Mohammad Akash",
       title: "General Secretery",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "male",
     },
     {
-      img: memberImg,
+      img: arman,
       name: "Arman Hasan",
       title: "Public relations officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
@@ -39,14 +51,14 @@ const Team = () => {
       gender: "female",
     },
     {
-      img: memberImg,
+      img: bulbul,
       name: "Bulbul Ahmed",
       title: "Tresurer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
       gender: "male",
     },
     {
-      img: memberImg,
+      img: siam,
       name: "Siam Hossain",
       title: "Human resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
@@ -107,30 +119,42 @@ const Team = () => {
       name: "Abu Raihan",
       title: "Content writter",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
       img: memberImg,
-      name: "Nahid Hossain",
+      name: "Sojib hasan joy",
       title: "Campus Ambassedor",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
       img: memberImg,
-      name: "Ikhlas Hossain",
+      name: "Abid hasan Sajib",
       title: "Graphics Designer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
     {
-      img: memberImg,
-      name: "Tanzila trisha",
+      img: "", // Empty string for female
+      name: "Sabina Saba",
       title: "Human Resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "female",
     },
     {
-      img: memberImg,
+      img: "", // Empty string for female
       name: "Tasmisa Tithi",
       title: "Human resource officer",
       socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "female",
+    },
+    {
+      img: memberImg,
+      name: "Md Mojahidul Islam",
+      title: "Human resource officer",
+      socialLink: ["facebook", "twitter", "instagram", "linkedin"],
+      gender: "male",
     },
   ];
   return (
