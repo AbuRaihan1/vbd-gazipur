@@ -9,7 +9,7 @@ const PageBanner = ({ title, description }) => {
           <h2 className="  lg:text-5xl text-3xl font-bold z-10 text-primary">
             {title}
           </h2>
-          <p className="text-white mt-4 font-semibold lg:w-3/4 pr-5  text-justify text-lg">
+          <p className="text-white mt-4 font-semibold lg:w-1/2 pr-5  text-justify text-lg">
             {description}
           </p>
         </div>
