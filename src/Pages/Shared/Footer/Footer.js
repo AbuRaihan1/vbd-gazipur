@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { AiFillYoutube, AiFillInstagram } from "react-icons/ai";
-
+import wave from "../../../../src/assets/images/wave2.svg";
 const Footer = () => {
   return (
-    <div>
+    <div className="relative">
+      <img src={wave} alt="" className="w-full " />
       <footer className="-mt-1 footer p-10 bg-[#161616] text-green-600 font-semibold">
         <div>
           <span className="text-primary uppercase text-xl">Services</span>
