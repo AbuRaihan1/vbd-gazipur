@@ -12,19 +12,22 @@ const ProjectDetails = () => {
     );
   }, [params.id]);
 
-  const { title, description, img } = item;
-  console.log(img);
+  const { title, description, img1, img2, img3 } = item;
   return (
     <div
       className="container mx-auto shadow-2xl rounded-xl p-5 my-20"
       data-aos="fade-up"
     >
-      <div className="grid lg:grid-cols-2 gap-6">
-        <div>
+      <div className="grid gap-6">
+        <div className="grid lg:grid-cols-2 gap-6 ">
           {" "}
-          <img src={img} alt="img" className="rounded-2xl" />
+          <img src={img1} alt="img" className="rounded-2xl lg:h-[624px]" />
+          <div className="grid lg:grid-cols-1 md:grid-cols-2 gap-5">
+            <img src={img2} alt="img" className="rounded-2xl lg:h-[300px] w-full"  />
+            <img src={img3} alt="img" className="rounded-2xl lg:h-[300px] w-full" />
+          </div>
         </div>
-        <div>
+        <div className="mt-5">
           <h2 className="text-secondary font-bold lg:text-5xl text-3xl text-center">
             {title}
           </h2>

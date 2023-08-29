@@ -14,7 +14,7 @@ const Project = ({ project, projectsArray }) => {
       duration: 2000,
     });
   }, []);
-  const { img, title, description, id } = project;
+  const { img1, img2, img3, title, description, id } = project;
   const descriptionSliceText =
     description.length > 100
       ? description.substring(0, 100) + "..."
@@ -24,9 +24,9 @@ const Project = ({ project, projectsArray }) => {
       <div className="mx-auto h-full">
         <div className="h-full  rounded-xl mb-4  mx-auto">
           <img
-            src={img}
+            src={img3}
             alt="project_img"
-            className="w-full h-[250] rounded-t-2xl"
+            className="w-full h-[250px] rounded-t-2xl"
           />
           <div className="py-3 px-4">
             <h2 className="font-bold text-2xl ">{title}</h2>
