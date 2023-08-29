@@ -3,7 +3,14 @@ import PageBanner from "../../components/PageBanner/PageBanner";
 import AllProjectsCard from "./AllProjectsCard";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 const AllProjects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   const title = "Our Projects";
   const description =
     "This is our project page, here you can know more about our projects";
@@ -26,9 +33,13 @@ const AllProjects = () => {
 
   console.log(allProjects);
   return (
-    <div>
+    <div className="mb-16">
       <PageBanner title={title} description={description} />
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 my-20 container mx-auto">
+
+      <h2 className="lg:text-5xl text-3xl font-bold text-secondary text-center mt-10">
+        All Projects
+      </h2>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-10 mb-20 container mx-auto">
         {allProjects.map((project, idx) => (
           <AllProjectsCard project={project} key={idx} />
         ))}

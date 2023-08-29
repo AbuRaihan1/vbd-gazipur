@@ -21,7 +21,7 @@ const Projects = () => {
   }, []);
 
   const [projects, setProjects] = useState([]);
-  
+
   useEffect(() => {
     fetch("/featuresProjectsData.json").then((res) =>
       res.json().then((data) => setProjects(data.slice(0, 5)))
@@ -31,9 +31,11 @@ const Projects = () => {
   return (
     <div className="pt-40  relative">
       <div className="custom-div"></div>
-      <h2 className="absolute lg:text-5xl text-secondary top-16 font-bold text-3xl  left-[45%]">
-        Projects
-      </h2>
+      <div className=" flex justify-center items-center">
+        <h2 className="absolute lg:text-5xl text-secondary top-10 font-bold text-3xl">
+          Features Projects
+        </h2>
+      </div>
       <div className="projects">
         <Swiper
           effect={"coverflow"}
