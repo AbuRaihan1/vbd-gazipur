@@ -1,5 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
+import CountUp from "react-countup";
+// const VisibilitySensor = require("react-visibility-sensor");
+import VisibilitySensor from "react-visibility-sensor";
+import ScrollTrigger from "react-scroll-trigger";
 const Statistics = () => {
   const Statistics = [
     {
@@ -16,10 +19,12 @@ const Statistics = () => {
       text: "Upazila Team",
     },
     {
-      number: "47",
-      text: "Completed Project",
+      number: "24",
+      text: "Training",
     },
   ];
+
+  const [counterOn, setCounterOn] = useState(false);
   return (
     <div className="container mx-auto">
       <div className="text-center lg:text-5xl text-3xl font-bold text-secondary">
@@ -27,7 +32,7 @@ const Statistics = () => {
       </div>
 
       <div
-        className="grid lg:grid-cols-4 bg-[#FBC807] my-20 justify-center items-center shadow-2xl"
+        className="grid lg:grid-cols-4 bg-[#FBC807] mt-10 mb-20 justify-center items-center shadow-2xl"
         data-aos="fade-up"
       >
         {Statistics.map((stData, idx) => {
@@ -35,7 +40,12 @@ const Statistics = () => {
             <div key={idx}>
               <div className="flex justify-center items-center flex-col mb-12 pt-12">
                 <h2 className="text-5xl font-bold text-secondary">
-                  {stData.number}
+                  <ScrollTrigger
+                    onEnter={() => setCounterOn(true)}
+                    onExit={() => setCounterOn(false)}
+                  >
+                    {counterOn && <CountUp end={stData.number} duration={4} />}
+                  </ScrollTrigger>
                 </h2>
                 <h2 className="font-bold mt-5 text-2xl">{stData.text}</h2>
               </div>
