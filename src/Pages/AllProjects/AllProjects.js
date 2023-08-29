@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PageBanner from "../../components/PageBanner/PageBanner";
 import AllProjectsCard from "./AllProjectsCard";
+import { GrPrevious, GrNext } from "react-icons/gr";
 
 const AllProjects = () => {
   const title = "Our Projects";
@@ -33,6 +34,17 @@ const AllProjects = () => {
         ))}
       </div>
       <div className="pagination text-center flex items-center justify-center gap-5">
+        <button
+          onClick={() => setCurrentPage(currentPage - 1)}
+          disabled={currentPage === 1}
+          className={`${
+            currentPage === 1
+              ? "opacity-50 cursor-not-allowed "
+              : " hover:bg-secondary bg-[#dad4d442] duration-150"
+          } px-4 py-2 border rounded-full h-12 text-white w-12`}
+        >
+          <GrPrevious />
+        </button>
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}
@@ -40,12 +52,24 @@ const AllProjects = () => {
             className={
               currentPage === index + 1
                 ? "bg-primary font-bold rounded-full h-12 w-12"
-                : "bg-[#dad4d442] font-bold rounded-full h-12 w-12 border"
+                : "bg-[#f3efef42] font-bold rounded-full h-12 w-12 border hover:bg-primary duration-150 hover:border-primary"
             }
           >
             {index + 1}
           </button>
         ))}
+
+        <button
+          onClick={() => setCurrentPage(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className={`${
+            currentPage === totalPages
+              ? "opacity-50 cursor-not-allowed "
+              : " hover:bg-secondary duration-150 bg-[#dad4d442]"
+          } px-4 py-2 border rounded-full h-12 text-white w-12`}
+        >
+          <GrNext />
+        </button>
       </div>
     </div>
   );
