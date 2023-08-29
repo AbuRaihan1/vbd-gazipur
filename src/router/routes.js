@@ -4,6 +4,7 @@ import AllProjects from "../Pages/AllProjects/AllProjects";
 import Team from "../Pages/Team/Team";
 import Contact from "../Pages/Contact/Contact";
 import ProjectDetails from "../Pages/projects/ProjectDetails";
+import AllProjectDetails from "../Pages/AllProjects/AllProjectDetails";
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../layout/Main");
 const router = createBrowserRouter([
@@ -34,9 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/project-details/:id",
         element: <ProjectDetails />,
-        // loader: async ({ params }) => {
-        //   return fetch(`/featuresProjectsData/${params.id}.json`);
-        // },
+      },
+      {
+        path: "/all-projects-details/:id",
+        element: <AllProjectDetails />,
       },
     ],
   },

@@ -21,9 +21,10 @@ const Projects = () => {
   }, []);
 
   const [projects, setProjects] = useState([]);
+  
   useEffect(() => {
     fetch("/featuresProjectsData.json").then((res) =>
-      res.json().then((data) => setProjects(data))
+      res.json().then((data) => setProjects(data.slice(0, 5)))
     );
   }, []);
 
@@ -60,9 +61,6 @@ const Projects = () => {
               className="mt-12 mb-44 shadow-2xl  bg-white"
             >
               <Project project={project} />
-              {/* <div className="hidden">
-                <ProjectDetails projectsArray={projects} />
-              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>
