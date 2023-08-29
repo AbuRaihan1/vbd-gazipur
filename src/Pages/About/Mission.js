@@ -7,7 +7,7 @@ const Mission = () => {
         <h2>Mission & Vission</h2>
       </div>
       <div className="grid lg:grid-cols-2 mb-20 mt-10 gap-7">
-        <div className="rounded-2xl shadow-2xl p-5">
+        <div className="rounded-2xl shadow-2xl p-5  border border-card">
           <h2 className="text-secondary font-bold lg:text-3xl text-2xl mb-3">
             Our Mission
           </h2>
@@ -20,7 +20,7 @@ const Mission = () => {
           </p>
         </div>
 
-        <div className="rounded-2xl shadow-2xl p-5">
+        <div className="rounded-2xl shadow-2xl p-5 border border-card">
           <h2 className="text-secondary font-bold lg:text-3xl text-2xl mb-3 lg:text-right">
             Our Vission
           </h2>

@@ -26,17 +26,18 @@ const AboutCompo = () => {
               Who we are?
             </h2>
             <p className="mb-4 text-justify text-[#CCCCCC] font-semibold text-[14px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, error ex. Modi, dolore. Repudiandae doloribus,
-              recusandae iusto facere architecto quam?
+              JAAGO Foundation has been the pioneer in providing the youth a
+              voice and a platform through its Youth Wing “Volunteer for
+              Bangladesh”. In 2011 with the support of U.S. Embassy by
+              empowering youths and facilitating volunteerism in Bangladesh
             </p>
 
-            <p className="text-justify text-black font-semibold text-[18px]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus maiores maxime mollitia blanditiis quas provident illum
-              eaque similique nihil debitis, culpa sapiente enim sed quod
-              necessitatibus dignissimos qui minus dolorum tenetur aspernatur.
-              Beatae ipsum quis harum corporis, inventore eaque perferendis!
+            <p className="text-justify text-[#d8d5d5] font-semibold text-[18px]">
+              "Volunteer for Bangladesh" is a dynamic nonprofit established in
+              2011, dedicated to catalyzing positive change through
+              volunteerism. Focused on education, healthcare, and sustainable
+              development, the organization empowers communities and creates a
+              brighter future by harnessing the energy of volunteers.
             </p>
             <Link to="/about">
               <button className="primary-button mt-8 ">See more</button>
