@@ -23,8 +23,16 @@ const ProjectDetails = () => {
           {" "}
           <img src={img1} alt="img" className="rounded-2xl lg:h-[624px]" />
           <div className="grid lg:grid-cols-1 md:grid-cols-2 gap-5">
-            <img src={img2} alt="img" className="rounded-2xl lg:h-[300px] w-full"  />
-            <img src={img3} alt="img" className="rounded-2xl lg:h-[300px] w-full" />
+            <img
+              src={img2}
+              alt="img"
+              className="rounded-2xl lg:h-[300px] w-full"
+            />
+            <img
+              src={img3}
+              alt="img"
+              className="rounded-2xl lg:h-[300px] w-full"
+            />
           </div>
         </div>
         <div className="mt-5">
