@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import defaultProjects from "../../../src/assets/images/projectImg.jpg";
 const AllProjectsCard = ({ project }) => {
   const { img1, title, description, id } = project;
   const descriptionSliceText =
@@ -11,7 +11,7 @@ const AllProjectsCard = ({ project }) => {
     <div data-aos="zoom-in" className="">
       <div className="border shadow-2xl rounded-xl min-h-[480px]">
         <img
-          src={img1}
+          src={img1 ? img1 : defaultProjects}
           alt="project_imgs"
           className="w-full h-[200px] rounded-t-xl"
         />

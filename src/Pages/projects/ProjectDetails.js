@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import defaultProjet from "../../../src/assets/images/projectImg.jpg";
 const ProjectDetails = () => {
   const params = useParams();
   const [item, setItem] = useState([]);
@@ -21,17 +22,21 @@ const ProjectDetails = () => {
       <div className="grid gap-6">
         <div className="grid lg:grid-cols-2 gap-6 ">
           {" "}
-          <img src={img1} alt="img" className="rounded-2xl lg:h-[624px]" />
+          <img
+            src={img1 ? img1 : defaultProjet}
+            alt="img"
+            className="rounded-2xl lg:h-[624px] border"
+          />
           <div className="grid lg:grid-cols-1 md:grid-cols-2 gap-5">
             <img
-              src={img2}
+              src={img2 ? img1 : defaultProjet}
               alt="img"
-              className="rounded-2xl lg:h-[300px] w-full"
+              className="rounded-2xl lg:h-[300px] w-full border"
             />
             <img
-              src={img3}
+              src={img3 ? img1 : defaultProjet}
               alt="img"
-              className="rounded-2xl lg:h-[300px] w-full"
+              className="rounded-2xl lg:h-[300px] w-full border"
             />
           </div>
         </div>
