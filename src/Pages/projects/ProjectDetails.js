@@ -29,12 +29,12 @@ const ProjectDetails = () => {
           />
           <div className="grid lg:grid-cols-1 md:grid-cols-2 gap-5">
             <img
-              src={img2 ? img1 : defaultProjet}
+              src={img2 ? img2 : defaultProjet}
               alt="img"
               className="rounded-2xl lg:h-[300px] w-full border"
             />
             <img
-              src={img3 ? img1 : defaultProjet}
+              src={img3 ? img3 : defaultProjet}
               alt="img"
               className="rounded-2xl lg:h-[300px] w-full border"
             />
