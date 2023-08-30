@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PageBanner from "../../components/PageBanner/PageBanner";
 import AllProjectsCard from "./AllProjectsCard";
 import { GrPrevious, GrNext } from "react-icons/gr";
-
+import projectBanner from "../../../src/assets/images/project_Banner.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const AllProjects = () => {
@@ -13,7 +13,7 @@ const AllProjects = () => {
   }, []);
   const title = "Our Projects";
   const description =
-    "This is our project page, here you can know more about our projects";
+    "Since creating our teams, we have completed numerous projects, and we are currently working on a new project. Day by day, we are contemplating how we can make a positive impact on our society through our projects.";
 
   const [allProjects, setAllProjects] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,7 +34,7 @@ const AllProjects = () => {
   console.log(allProjects);
   return (
     <div className="mb-16">
-      <PageBanner title={title} description={description} />
+      <PageBanner title={title} img={projectBanner} description={description} />
 
       <h2 className="lg:text-5xl text-3xl font-bold text-secondary text-center my-16">
         All Projects
@@ -45,7 +45,7 @@ const AllProjects = () => {
         ))}
       </div>
 
-      {allProjects? (
+      {allProjects ? (
         <div className="pagination text-center flex items-center justify-center gap-5">
           <button
             onClick={() => setCurrentPage(currentPage - 1)}

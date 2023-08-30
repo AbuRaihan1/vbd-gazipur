@@ -1,6 +1,6 @@
 import React from "react";
-import img from "../../../src/assets/images/group.jpg";
-const PageBanner = ({ title, description }) => {
+// import img from "../../../src/assets/images/group.jpg";
+const PageBanner = ({ title, description, img }) => {
   return (
     <div className="lg:h-[500px] h-[350px] relative">
       <div className="relative">

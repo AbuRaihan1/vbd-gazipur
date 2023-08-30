@@ -18,10 +18,11 @@ import sakibSojib from "../../../src/assets/images/sakibSojib.jpg";
 import raihan from "../../../src/assets/images/raihan.jpg";
 import nahid from "../../../src/assets/images/nahid.jpg";
 import siam from "../../../src/assets/images/siam.jpg";
+import teamBanner from "../../../src/assets/images/team_Banner.jpg";
 const Team = () => {
   const title = "Our Team";
   const description =
-    "This is our team page, here you can know more about our team";
+    "Central to our journey are the dedicated teams that fuel our success. Since inception, we've accomplished numerous projects, embodying our commitment to excellence and innovation. Currently, we're engrossed in a novel project, driven by our passion for creating positive societal impact.";
 
   const boardMember = [
     {
@@ -161,7 +162,7 @@ const Team = () => {
   ];
   return (
     <div>
-      <PageBanner title={title} description={description} />
+      <PageBanner title={title} img={teamBanner} description={description} />
       <div>
         <div className="my-20 container mx-auto">
           <Tabs>

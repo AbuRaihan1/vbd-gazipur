@@ -12,21 +12,18 @@ import BannerSlider from "./BannerSlider";
 export default function Banner() {
   const bannerSlides = [
     {
-      img: slider2,
+      img: slider1,
       title: "LET'S REBUILD OUR NATION'S!",
-      description: "project description amar shonar bangla ami tumay valobashi",
       id: 2,
     },
     {
-      img: slider1,
+      img: slider2,
       title: "VOLUNTEER FOR BANGLADESH",
-      description: "project description amar shonar bangla ami tumay valobashi",
       id: 1,
     },
     {
       img: slider3,
       title: "WE ARE COMMITED TO OUR WORK",
-      description: "project description amar shonar bangla ami tumay valobashi",
       id: 3,
     },
   ];
