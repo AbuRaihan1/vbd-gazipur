@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Loader = () => {
-  return <div className="loader">Projects Loading...</div>;
+  return <div className="loader text-2xl font-bold">Projects Loading...</div>;
 };
 
 const AllProjects = () => {
