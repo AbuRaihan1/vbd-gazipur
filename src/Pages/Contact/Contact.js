@@ -38,14 +38,28 @@ const Contact = () => {
             <textarea
               name=""
               placeholder="Enter Your message here"
-              className="border-2 rounded-md px-2 py-2 outline-secondary w-full mt-4 h-[150px] resize-none"
+              className="border-2 rounded-md px-2 py-2 outline-secondary w-full mt-5 h-[150px] resize-none"
             ></textarea>
             <button
               onClick={sendMessage}
-              className="secondary-button w-full mt-3"
+              className="secondary-button w-full mt-4"
             >
               Send Message
             </button>
+          </div>
+
+          <div className="mt-10">
+            <div className="mapouter">
+              <div className="gmap_canvas ">
+                <iframe
+                  title="unique"
+                  className="mapInner w-full h-[400px]"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Dhaka,%20Bangladesh&t=k&z=9&ie=UTF8&iwloc=&output=embed"
+                ></iframe>
+                <a href="https://www.embedgooglemap.net"> </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
