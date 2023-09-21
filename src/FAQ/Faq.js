@@ -14,16 +14,25 @@ export default function Faq() {
 
   const faq = [
     {
-      question: "why are you?",
-      answer: "cause i'm boss of mine",
+      question: "Do I need any specific qualifications to volunteer?",
+      answer:
+        "No, we welcome volunteers from all backgrounds and skill levels. Your willingness to contribute and make a difference in our community is what matters most.",
     },
     {
-      question: "why are you?",
-      answer: "cause i'm boss of mine",
+      question: "What types of volunteer opportunities does VBD Gazipur offer?",
+      answer:
+        "We provide a wide range of opportunities, including educational support, environmental initiatives, healthcare outreach, and more. Visit our 'Volunteer Opportunities'. page to explore the current projects and find one that aligns with your interests",
     },
     {
-      question: "why are you?",
-      answer: "cause i'm boss of mine",
+      question:
+        "How can I support VBD Gazipur if I don't have the time to volunteer?",
+      answer:
+        "We greatly appreciate your support! You can make a donation on our 'Support Us' page. Your contributions help us fund our projects and make a positive impact in Gazipur.",
+    },
+    {
+      question: "Is VBD Gazipur a registered non-profit organization?",
+      answer:
+        " Yes, we are a registered non-profit organization committed to improving the lives of Gazipur's residents. You can find our registration details on our 'About Us' page.",
     },
   ];
 
@@ -39,7 +48,7 @@ export default function Faq() {
           data-aos="fade-up"
         >
           {faq.map((f, idx) => (
-            <Disclosure key={idx} className="mt-12 mb-44 shadow-2xl  bg-white">
+            <Disclosure key={idx} className="mt-12 mb-44 shadow-2xl bg-white">
               <DisclosureQue disclosureData={f} />
             </Disclosure>
           ))}

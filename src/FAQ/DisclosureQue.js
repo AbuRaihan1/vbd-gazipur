@@ -7,7 +7,7 @@ const DisclosureQue = ({ disclosureData }) => {
     <Disclosure>
       {({ open }) => (
         <>
-          <Disclosure.Button className="mt-5 w-full flex items-center justify-between rounded-lg hover:bg-secondary px-4 py-2 text-left text-2xl font-bold text-white bg-green-900 focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75">
+          <Disclosure.Button className="mt-5 w-full flex items-center justify-between rounded-lg hover:bg-secondary px-4 py-2 text-left text-xl font-bold text-white bg-green-900 focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75">
             <span>{question}</span>
             <ChevronUpIcon
               className={`${
@@ -15,7 +15,7 @@ const DisclosureQue = ({ disclosureData }) => {
               } h-5 w-5 text-primary`}
             />
           </Disclosure.Button>
-          <Disclosure.Panel className="px-4 pt-4 pb-2 text-lg text-black font-semibold text-justify">
+          <Disclosure.Panel className="rounded-md mt-4 px-4 pt-4 pb-2 text-lg text-black font-semibold text-justify bg-[#2683233a]">
             {answer}
           </Disclosure.Panel>
         </>
