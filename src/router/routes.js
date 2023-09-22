@@ -35,6 +35,14 @@ const router = createBrowserRouter([
         path: "/project-details/:id",
         element: <ProjectDetails />,
       },
+      {
+        path: "donate",
+        element: <ProjectDetails />,
+      },
+      {
+        path: "join-now",
+        element: <ProjectDetails />,
+      },
     ],
   },
 ]);

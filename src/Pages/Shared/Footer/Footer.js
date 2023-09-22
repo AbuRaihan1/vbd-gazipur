@@ -54,18 +54,34 @@ const Footer = () => {
           </Link>
         </div>
         <div>
-          <span className="text-primary uppercase text-xl">Company</span>
-          <Link className="link link-hover" to="#">
-            Branding
+          <span className="text-primary uppercase text-xl">Dev. info</span>
+          <Link
+            target="_blank"
+            className="link link-hover"
+            to="https://github.com/AbuRaihan1"
+          >
+            Github
           </Link>
-          <Link className="link link-hover" to="#">
-            Design
+          <Link
+            className="link link-hover"
+            to="https://linkedin.com/in/aburaihan019"
+            target="_blank"
+          >
+            Linkedin
           </Link>
-          <Link className="link link-hover" to="#">
-            Marketing
+          <Link
+            className="link link-hover"
+            to="https://facebook.com/aburaihan019"
+            target="_blank"
+          >
+            Facebook
           </Link>
-          <Link className="link link-hover" to="#">
-            Advertisement
+          <Link
+            className="link link-hover"
+            to="https://instagram.com/aburaihan019"
+            target="_blank"
+          >
+            Instagram
           </Link>
         </div>
       </footer>
