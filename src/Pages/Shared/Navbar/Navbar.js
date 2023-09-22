@@ -65,6 +65,31 @@ const Header = () => {
               Team
             </NavLink>
           </li>
+
+          <li>
+            <NavLink
+              to="/donate"
+              aria-label="Donate"
+              title="Donate"
+              className={({ isActive }) =>
+                isActive ? "navbar-active-link" : "navbar-link"
+              }
+            >
+              Donate
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/join-now"
+              aria-label="Join-now"
+              title="Joinnow"
+              className={({ isActive }) =>
+                isActive ? "navbar-active-link" : "navbar-link"
+              }
+            >
+              Join now
+            </NavLink>
+          </li>
           <li>
             <NavLink
               to="/contact"
@@ -187,6 +212,32 @@ const Header = () => {
                         Team
                       </NavLink>
                     </li>
+
+                    <li>
+                      <NavLink
+                        to="/donate"
+                        aria-label="Donate"
+                        title="Donate"
+                        className={({ isActive }) =>
+                          isActive ? "navbar-active-link" : "navbar-link"
+                        }
+                      >
+                        Donate
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/join-now"
+                        aria-label="Join-now"
+                        title="Joinnow"
+                        className={({ isActive }) =>
+                          isActive ? "navbar-active-link" : "navbar-link"
+                        }
+                      >
+                        Join now
+                      </NavLink>
+                    </li>
+
                     <li>
                       <NavLink
                         to="/contact"
